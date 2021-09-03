@@ -1,0 +1,1286 @@
+.flexed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body,
+html {
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+    background-color: #f7f7f7;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: inherit !important;
+}
+
+.link_tag {
+    color: #fff;
+}
+
+
+/* 
+=========
+HOME PAGE
+=========
+*/
+
+.main-page-body {
+
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    /* padding: 10px; */
+    box-shadow: none;
+    background-color: #B2F093 !important;
+
+
+}
+
+.navbar-brand {
+    padding: 5px 10px;
+    height: 52px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+
+}
+
+.navbar-brand p {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.jumbotron {
+    position: relative;
+    height: 80vh;
+    flex-flow: column;
+
+
+}
+
+.jumbotron-contents-container {
+    flex-flow: column;
+
+
+}
+
+.subheading {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.jumbotron-description {
+    width: 36%;
+    font-weight: 300;
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+.jumbotron-btn-wrap {
+    width: 274px;
+    justify-content: space-evenly;
+}
+
+.shop-btn,
+.signup-btn {
+    width: 120px;
+    height: 40px;
+    transition: 0.3s;
+
+}
+
+.shop-btn {
+    color: #fff;
+    font-weight: 600;
+    background-color: #59cf94;
+}
+
+.signup-btn {
+    font-weight: 600;
+    background-color: #f9f871;
+    color: #59cf94;
+}
+
+
+.shop-btn:hover,
+.signup-btn:hover,
+.store-footer-signup-btn:hover {
+
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+
+}
+
+.sticky-footer {
+    position: absolute;
+    bottom: 0;
+    height: 64px;
+    width: 100%;
+    background-color: #B2F093 !important;
+
+
+}
+
+.footer-socials-wrap {
+    width: 25%;
+    justify-content: space-evenly;
+
+
+}
+
+.social-icons {
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 300;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* 
+====================
+SIGN UP/CONTACT PAGE
+====================
+*/
+
+.contact-signup-body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    /* height: fit-content; */
+}
+
+.top-contents-wrap,
+.bottom-contents-wrap {
+    flex-flow: row;
+
+}
+
+
+
+.top-left-contents,
+.top-right-contents,
+.bottom-left-contents,
+.bottom-right-contents {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+/* TOP LEFT CONTENTS */
+
+.top-left-contents {
+    position: relative;
+    background-image: url(/static/images/green-backing.png);
+
+}
+
+.back-btn {
+    position: absolute;
+    top: 0;
+}
+
+.back-btn-2 {
+    display: none;
+}
+
+.say-hi-text {
+    color: #f7f7f7;
+    text-align: center;
+    font-size: 6.2rem;
+    font-family: "Bree Serif", serif;
+    margin: 0;
+    color: #fff;
+
+}
+
+.signup-below-text {
+    color: #f7f7f7;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.lefside-text-wrap {
+    flex-flow: column;
+}
+
+.down-arrow-link {
+    animation-name: bounce;
+    animation-delay: 3s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+.down-arrow-link:hover,
+.up-arrow-link:hover {
+    animation-name: bounce;
+}
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    5% {
+        transform: translateY(15%);
+    }
+
+    10% {
+        transform: translateY(0);
+    }
+
+    15% {
+        transform: translateY(15%);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(15%);
+    }
+
+    30% {
+        transform: translateY(0);
+    }
+
+    35% {
+        transform: translateY(15%);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce-2 {
+    0% {
+        transform: translateY(0);
+    }
+
+    5% {
+        transform: translateY(-15%);
+    }
+
+    10% {
+        transform: translateY(0);
+    }
+
+    15% {
+        transform: translateY(-15%);
+    }
+
+    20% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-15%);
+    }
+
+    30% {
+        transform: translateY(0);
+    }
+
+    35% {
+        transform: translateY(-15%);
+    }
+
+    40% {
+        transform: translateY(0);
+    }
+}
+
+
+.left-screen-socials {
+    position: absolute;
+    bottom: 0px;
+    height: 100px;
+    flex-flow: column;
+}
+
+.socials {
+    width: 125px;
+    justify-content: space-between;
+}
+
+/* TOP RIGHT CONTENTS */
+
+.top-right-contents {}
+
+.logo {
+    width: 100px;
+}
+
+.rightside-text-wrap {
+    flex-flow: column;
+}
+
+.contact-blurb {
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 300;
+}
+
+.message-form {
+    flex-flow: column;
+    justify-content: space-evenly;
+    height: 55vh;
+    width: 55%;
+}
+
+.form-fields {
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 2px solid #333;
+}
+
+.form-fields:active {
+    background-color: transparent;
+
+}
+
+.form-fields:focus {
+    background-color: transparent;
+}
+
+.leave-message {
+    font-weight: 300;
+}
+
+.message-box {
+    resize: none;
+    width: 100%;
+    height: 150px;
+}
+
+#submit-form-btn {
+    width: 100%;
+    height: 45px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    background-color: #f9f871;
+    color: #59cf94;
+    transition: 0.3s;
+}
+
+#submit-form-btn:hover {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+}
+
+
+/* BOTTOM LEFT CONTENTS */
+
+
+.bottom-left-text {
+    flex-flow: column;
+}
+
+.signup-blurb {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.signup-form {
+    position: relative;
+    flex-flow: column;
+    height: 60vh;
+    width: 55%;
+    justify-content: space-evenly;
+}
+
+.signup-form input {
+
+    width: 100%;
+    height: 45px;
+    background-color: transparent;
+    border-radius: 0px;
+    border: none;
+    border-bottom: 2px solid #333;
+
+}
+
+.top-form-inputs {
+    width: 49%;
+}
+
+.top-form-inputs-wrap {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.email-address-btmleft,
+.password,
+.re-type-password {
+    width: 100%;
+}
+
+.terms-box {
+    width: 100%;
+}
+
+#radio-btn {
+    width: 15px;
+    margin-right: 10px;
+}
+
+#signup-form-btn-btmleft {
+    width: 100%;
+    height: 45px;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    background-color: #f9f871;
+    color: #59cf94;
+    transition: 0.3s;
+}
+
+#signup-form-btn-btmleft:hover {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+}
+
+/* BOTTOM RIGHT CONTENTS */
+
+.bottom-right-contents {
+    position: relative;
+    background-image: url(/static/images/green-backing.png);
+
+}
+
+.text-wrap-2 {
+    position: relative;
+    flex-flow: column;
+}
+
+.home-btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.save-15-text {
+    font-weight: 300;
+}
+
+.up-arrow-link {
+
+    transform: rotate(180deg);
+}
+
+.up-arrow-link:hover {
+    animation-name: bounce-2-reverse;
+
+}
+
+
+
+/* 
+==========
+STORE PAGE
+==========
+*/
+
+.top-store-banner-wrap {
+    width: 100%;
+    height: 90vh;
+    flex-flow: column;
+    margin-top: 30px;
+
+}
+
+.top-banner {
+    flex-flow: column;
+}
+
+.store-logo {
+    width: 75px;
+}
+
+.store-title {
+    text-align: center;
+    width: 100vw;
+    margin: 0;
+    font-weight: 600;
+    font-size: 5rem;
+    color: #8d8d8d;
+    line-height: 65px;
+}
+
+.title-wrap {
+    height: 100%;
+    flex-flow: column;
+}
+
+.store-signup-btn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    color: #f7f7f7;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #59cf94;
+    transition: 0.3s;
+    margin-top: 30px;
+
+}
+
+.store-signup-btn:hover {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+}
+
+.store-socials-wrap {
+    height: fit-content;
+    padding: 13px 0px;
+    background-color: #B2F093;
+    justify-content: space-evenly;
+}
+
+.store_social_icons {
+    font-size: 1.3rem;
+
+}
+
+.store-images-wrap {
+    height: fit-content;
+    flex-flow: column;
+    margin-top: 50px;
+}
+
+.store-blurb {
+    width: 45%;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.link-tag {
+    font-weight: 600;
+    color: #000;
+}
+
+.store-plants {
+    margin-top: 50px;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+.plant-card {
+    margin: 0px 15px;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.buy-btn {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background-color: #f9f871;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.buy-btn:hover {
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+
+}
+
+.card-img-top {
+    border-radius: 0px !important;
+}
+
+.plant-card {
+    margin-top: 50px;
+}
+
+.footer-blurb {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.footer-blurb-2 {
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.store-footer-contents {
+    position: relative;
+    min-height: 300px;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-flow: column;
+    background-color: #B2F093;
+
+}
+
+.store-footer-signup-btn {
+    width: 25%;
+    height: 45px;
+    background-color: #f9f871;
+    border: none;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.monster-lady-image {
+    position: absolute;
+    top: -77px;
+    left: 50px;
+    width: 150px;
+}
+
+/* 
+===============
+PLANT CARE PAGE
+===============
+*/
+
+.header-contents {
+    background-color: #A1ED85;
+
+    border: 1px solid red;
+}
+
+.plant-care-title {
+    font-size: 4.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 50px 0px;
+
+}
+
+.sub-banner {
+    background-color: #b6e9a3;
+    width: 100vw;
+
+}
+
+.sub-blurb {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 20px 0px;
+}
+
+.plant-1-wrap {
+    position: relative;
+    flex-wrap: wrap;
+    flex-flow: row;
+}
+
+.plant-1 {
+    width: 400px;
+    height: 400px;
+}
+
+.plant-care-text,
+.care-card-wrap,
+.plant-care-image {
+    width: 33.33% !important;
+    flex-flow: column;
+}
+
+.plantcare-title1 {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+
+
+.care-card {
+    flex-flow: column;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #F9F871;
+    box-shadow:
+        0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+        0 12.5px 10px rgba(0, 0, 0, 0.042),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+        0 100px 80px rgba(0, 0, 0, 0.02);
+}
+
+.known-to-attract-wrap {
+    width: 100%;
+    justify-content: space-around;
+}
+
+.iamknownto-1 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 15px 0px;
+}
+
+.care-card1-text {
+    text-align: center;
+    width: 100%;
+}
+
+.insect-icon {
+    flex-flow: column;
+
+}
+
+input.email_input {
+    width: 30%;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #F9F871;
+
+}
+
+
+@media only screen and (min-width : 320px) {
+
+    /*------MAIN PAGE------*/
+
+    .top_banner {
+        height: 50px;
+    }
+
+  
+
+    .center_contents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        max-width: 90%;
+        margin: 85px auto;
+
+
+    }
+
+    .center_logo {
+        max-height: 150px;
+    }
+
+    .center_blurb {
+        font-weight: 700;
+        margin: 0;
+        max-width: 324px;
+        text-align: center;
+        font-size: 20px;
+
+
+    }
+
+    .sub_blurb {
+        text-align: center;
+        max-width: 324px;
+    }
+
+    .btn_wrap {
+        width: 80%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    .center_btns {
+        min-height: 40px;
+        min-width: 110px;
+        border: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+            0 12.5px 10px rgba(0, 0, 0, 0.042),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+            0 100px 80px rgba(0, 0, 0, 0.02);
+
+    }
+
+    .shop_btn {
+        background-color: #59cf94;
+        color: #fff;
+    }
+
+    .signup_btn {
+        background-color: #f9f871;
+        color: #59cf94;
+    }
+
+    /*-----FOOTER CONTENTS-----*/
+
+    .footer_contents {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        min-width: 100%;
+        bottom: 0;
+        min-height: 50px;
+        background-color: #B2F093;
+
+    }
+
+    .socials_wrap {
+        min-width: 90%;
+        min-height: 35px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #fff;
+
+    }
+
+    .social_icons {
+        font-size: 20px;
+        color: #59cf94;
+    }
+
+
+    .plant_care_btn {
+        width: 40%;
+        height: 75%;
+        font-family: 'Open Sans', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border: none;
+        background-color: #59cf94;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    /*------PLANT STORE PAGE------*/
+
+    .store_body {
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+
+    .fa-home {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        color: #59cf94;
+        font-size: 25px;
+    }
+
+    .top_contents {
+        height: 670px;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    .store_logo {
+        max-height: 95px;
+        margin: 25px auto;
+
+
+    }
+
+    .title_btn_wrap {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        margin: auto;
+
+
+    }
+
+    .store_title {
+        max-width: 234px;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 60px;
+        color: #8d8d8d;
+        font-family: "Bree Serif", serif;
+
+    }
+
+    .store_text {
+        color: #b9b9b9;
+        font-size: 56px;
+        margin: 0;
+    }
+
+    .store_signup_btn {
+        width: 135px;
+        height: 55px;
+        align-self: center;
+        margin-top: 25px;
+        border: none;
+        background-color: #a1ed85;
+        color: #fff;
+        font-size: 20px;
+        font-family: "Bree Serif", serif;
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.07),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.05),
+            0 12.5px 10px rgba(0, 0, 0, 0.042),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.035),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.028),
+            0 100px 80px rgba(0, 0, 0, 0.02);
+
+
+    }
+
+    .socials_bar {
+        height: 70px;
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #B2F093;
+
+    }
+
+
+
+    .store_blurb_wrap {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #B2F093;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid #f9f871;
+    }
+
+    .store_blurb {
+        text-align: center;
+        width: 85%;
+        max-width: 561px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    /*---STORE IMAGES---*/
+
+    .store_images_wrap {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+
+    }
+
+    .plant_row_wrap {
+        min-width: 90%;
+        margin: auto;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+
+    }
+
+    .plant_img_wrap {
+        border-bottom: 3px solid #B2F093;
+        margin-bottom: 25px;
+
+
+    }
+
+    .plant_img {
+        height: 260px;
+        box-shadow:
+            0 1.4px 1.9px rgba(0, 0, 0, 0.017),
+            0 3.9px 5.4px rgba(0, 0, 0, 0.025),
+            0 9.3px 13px rgba(0, 0, 0, 0.033),
+            0 31px 43px rgba(0, 0, 0, 0.05);
+
+    }
+
+    .plant_name {
+        text-align: center;
+        font-size: 20px;
+        font-weight: 600;
+        margin: 2px;
+    }
+
+    .plant_price {
+        text-align: center;
+        margin: 2px;
+        font-size: 17px;
+    }
+
+    .fa-shopping-basket {
+        font-size: 30px;
+        color: #B2F093;
+        margin-bottom: 10px;
+
+    }
+
+    .store_footer_contents {
+        min-height: 300px;
+        margin-top: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: column;
+        background-color: #B2F093;
+
+    }
+
+    .footer_blurb {
+        text-align: center;
+        font-size: 16px;
+        max-width: 100%;
+        margin: 0 0 10px 0;
+        font-weight: 700;
+    }
+
+    .footer_blurb_2 {
+        text-align: center;
+        max-width: 85%;
+        margin: 0;
+    }
+
+    .email_input {
+        height: 100px;
+        max-width: 60%;
+        text-align: center;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #000;
+    }
+
+    .submit_signup_btn {
+        width: 120px;
+        height: 50px;
+        border: none;
+        color: #000;
+        font-size: 18px;
+        background-color: #f9f871;
+    }
+
+    /* PLANT CARE PAGE */
+
+    .plant-1-wrap {
+        margin: 0px 30px;
+    }
+
+    .plant-care-title {
+        text-align: center;
+    }
+
+    .plant-care-text {
+        width: 100vw;
+    }
+
+    .care-footer-contents {
+        position: relative;
+        min-height: 300px;
+        margin-top: 100px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: column;
+        background-color: #B2F093;
+        text-align: center;
+    }
+
+    input.email_input {
+        width: 50%;
+        height: 45px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid #F9F871;
+    
+    }
+    
+
+
+}
+
+
+@media(max-width: 1311px) {
+    .top-left-contents {
+        display: none;
+    }
+
+    .bottom-right-contents {
+        display: none;
+    }
+
+    .rightside-text-wrap {
+        width: 100%;
+    }
+
+    .message-form,
+    .signup-form {
+        width: 90vw !important;
+    }
+
+    .line-break {
+        display: none;
+    }
+
+    .contact-blurb,
+    .signup-blurb {
+        width: 300px;
+        font-size: 1rem;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .form-fields {
+        margin-bottom: 15px;
+    }
+
+    #submit-form-btn {
+        margin-top: 15px;
+    }
+
+    .back-btn-2 {
+        display: block;
+        position: absolute;
+        top: 0;
+    }
+
+    /* HOME PAGE */
+
+    .subheading {
+        text-align: center;
+    }
+
+    .jumbotron-description {
+        width: 100%;
+    }
+
+    .footer-socials-wrap {
+        width: 100%;
+
+    }
+
+    .navbar-collapse {
+        background-color: #59cf94;
+        z-index: 200;
+    }
+
+    .nav-link {
+        color: #fff !important;
+        font-size: 2rem;
+    }
+
+    .navbar-collapse ul li {
+        color: #f7f7f7;
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+
+    }
+
+    /* STORE PAGE */
+
+    .store-blurb {
+        width: 90%;
+    }
+
+    .footer-blurb {
+        font-size: 1.2rem;
+        margin-top: 50px;
+    }
+
+    .footer-blurb-2 {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    /* PLANT CARE PAGE */
+
+    .plant-1-wrap {
+        flex-flow: column;
+        margin: 0px 30px;
+
+    }
+
+    .plantcare-title1 {
+        margin: 30px 0px;
+        text-align: center;
+    }
+
+    .plantcare-para1 {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+
+}
+
+

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="static/images/favicon.png">
+    <link rel="icon" type="image/png" href="static/images/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./static/css/main.css" type="text/css">
+    <title>Contact | Sign up</title>
+</head>
+
+<body class="contact-signup-body">
+
+    <div id="theTop" class="top-contents-wrap flexed">
+
+        <div class="flexed top-left-contents row col-6">
+            <a class="back-btn" href="/">
+                <i class="fas fa-home"></i>
+            </a>
+            <div class="lefside-text-wrap flexed">
+                <h2 class="say-hi-text">Say hi.</h2>
+                <p class="flexed signup-below-text mt-3">Or sign up below</p>
+                <a href="#theBottom">
+                    <img alt="picture" class="down-arrow-link" src="/static/images/iconmonstr-arrow-29.png">
+                </a>
+            </div>
+
+            <div class="left-screen-socials flexed">
+                <p class="follow-us-text">Follow us online!</p>
+                <div class="socials flexed">
+                    <i class="fab  fa-twitter-square"></i>
+                    <i class="fab  fa-instagram"></i>
+                    <i class="fab  fa-facebook-square"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="flexed top-right-contents row col-6">
+            <a class="back-btn-2" href="/">
+                <i class="fas fa-home"></i>
+            </a>
+            <div class="rightside-text-wrap flexed">
+                <img alt="picture" class="logo" src="/static/images/Logo.png">
+                <p class="contact-blurb">Send us a message with your name and<br class="line-break">
+                    email address and we'll get back to you<br class="line-break">
+                    within 24 hours.
+                </p>
+                <form class="flexed message-form">
+                    <input type="text" class="form-fields first-name" placeholder="First Name">
+                    <input type="text" class="form-fields last-name" placeholder="Last Name">
+                    <input type="text" class="form-fields email-address" placeholder="Email Address">
+
+                    <h3 class="leave-message mt-2 mb-2">Leave us a message:</h3>
+                    <textarea class="message-box"></textarea>
+                    <button onclick="newFunction()" id="submit-form-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bottom-contents-wrap flexed">
+
+        <div class="flexed bottom-left-contents row col-6">
+            <div class="bottom-left-text flexed">
+
+                <img alt="picture" class="logo" src="/static/images/Logo.png">
+                <p class="signup-blurb">We'll send you weekly updates on new<br>
+                    products and secret discounts only<br>
+                    available to our online subscribers</p>
+
+                <form class="signup-form flexed">
+
+                    <span class="top-form-inputs-wrap flexed">
+                        <input type="text" class="first-name-btmleft top-form-inputs" placeholder="First Name">
+                        <input type="text" class="last-name-btmleft top-form-inputs" placeholder="Last Name">
+                    </span>
+                    <input type="text" class="email-address-btmleft" placeholder="Email Address">
+
+                    <input type="password" class="password" placeholder="Enter password">
+                    <input type="password" class="re-type-password" placeholder="Re-enter password">
+
+                    <div class="terms-box flexed mb-5">
+                        <input type="radio" id="radio-btn">
+                        <label class="terms" for="radio-btn">I agree to the following
+                            <a href="https://en.wikipedia.org/wiki/Terms_of_service" target="_blank">
+                                <span style="font-weight: 600;">terms of
+                                    service.</span>
+
+                            </a>
+                        </label>
+                    </div>
+
+                    <button id="signup-form-btn-btmleft">Sign up</button>
+                </form>
+            </div>
+
+
+        </div>
+
+        <div id="theBottom" class="flexed bottom-right-contents row col-6">
+
+            <div class="text-wrap-2 flexed">
+                <a href="#theTop" class="mt-5">
+                    <img alt="picture" class="up-arrow-link" src="/static/images/iconmonstr-arrow-29.png">
+                </a>
+                <h1 class="say-hi-text">Sign up.</h1>
+                <h2 class="save-15-text">Save 15% on your first order when you sign up</h2>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
